@@ -1,0 +1,205 @@
+table{
+    border: 1px solid;
+    border-collapse: collapse;
+    }
+    td,th,tr{
+    border: 1px solid;
+    padding: 5px;
+    line-height: 1;
+    text-align: left;
+    }
+
+    img{
+        width: 40px; height: auto;
+        padding-left: 150px;
+        padding-top: 20px;
+    }
+    #deq{
+      width: 40px; height: auto;
+      padding-left: 220px;
+      padding-top: 10px;
+  }
+
+  /* CSS */
+.ligne_bas {
+  width: 100%;
+  height: 1px;
+  border-bottom: 1px solid #9e9696; 
+}
+
+    table::before {
+        content: "ORIGINAL";
+        position: absolute;
+        top: 70vh; /* positionner à 50% de la hauteur de la page */
+        left: 25vw; /* positionner à 50% de la largeur de la page */
+        transform: translate(-50%, -50%) rotate(-73deg);
+        font-size: 240px;
+        font-family: 'Arial, Black', sans-serif; /* Remplacez 'Nom de la police' par la police que vous souhaitez utiliser */
+        color: rgba(29, 142, 190, 0.5);
+        opacity: 0.5; /* Valeur entre 0 (transparent) et 1 (opaque) */
+        z-index: -1;
+        text-shadow: 4px 10px 6px #36b432;
+      }
+      
+      body {
+        width: 50%; /* réduire la largeur à 800px */
+        height: auto; /* réduire la hauteur à 600px */
+        margin: 0 auto; /* centrer la page */
+        padding: 5px; /* ajouter une marge intérieure */
+        font-size: 10px; /* ajuster la taille de la police */
+      }
+
+
+      table {
+        position: relative;
+        z-index: 1; /* pour positionner le tableau au-dessus du pseudo-élément */
+      }
+
+      .ligne {
+        width: 100%;
+        height: 1px;
+        border-bottom: 1px solid #fff; 
+      }
+
+
+
+    /*aligner au centre a partir de la 4eme colone*/
+    td:nth-child(n+4), th:nth-child(n+4){
+    text-align: center;
+    }
+
+    td:nth-child(3), th:nth-child(3){
+        text-align: left;
+        }
+    /* Aligner les 3 dernieres lignes*/
+    tfoot tr:nth-last-child(-n+4) td,th{
+    text-align: center;
+    /* couleur de fond grise*/
+    }
+    #gauche {
+    text-align: left;
+    }
+    tfoot th:nth-of-type(n+1){
+    background-color: rgba(205, 221, 236, 0.856);
+    }
+    #col{
+    background-color: rgba(205, 221, 236, 0.856);
+    
+    }
+    
+
+  /* Créez des classes pour les entêtes */
+  .entete_gauche {
+    text-align: center;
+    float: left;
+  }
+  
+  .entete_droite {
+    text-align: center;
+    float: right;
+  }
+  #h4{
+    margin-top: 5%;
+    border-top: 1px solid;
+
+  }
+  
+  /* Aligner les titres au centre de la page */
+  h5, h4 {
+    text-align: center;
+
+  }
+  
+  /* Aligner les entêtes gauches et droites */
+  .entete_gauche {
+    float: left;
+    text-align: center;
+  }
+  .entete_droite{
+    float: right;
+    text-align: center;
+  }
+
+  .entete_gauche2 {
+    float: left;
+    text-align: left;
+  }
+  .entete_droite2{
+    float: right;
+    text-align: right;
+  }
+  .entete_droite3{
+    float: right;
+    text-align: left;
+
+  }
+  h4 {
+    display: block;
+    text-align: center;
+  }
+  .entete_gauche3 {
+    float: left;
+    text-align: left;
+  }
+  #ent1{
+    padding-top: 0.5%;
+    width: 100%;
+    padding-bottom: 5px;
+  }
+  #ent2{
+    margin-bottom: 13%;
+    width: 100%;
+  }
+  #ent3{
+    margin-bottom: 18%;
+    width: 100%;
+  }
+  
+  /* Nettoyer les floats */
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  /* Ajouter une classe clearfix aux conteneurs */
+  .conteneur {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .conteneur::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .dessous_gache {
+    text-align: left;
+    float: left;
+  }
+  .dessous_droite {
+    text-align: left;
+    float: right;
+  }
+  .ci_dessous {
+    text-align: center;
+    float: center;
+    padding-bottom: 1px;
+    padding-top: 6%;
+    width: 100%;
+  }
+  #dessous{
+    padding-top: 0.5%;
+    width: 100%;
+    padding-bottom: 5px;
+  }
+  .ligned {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px solid #fff; 
+  }
